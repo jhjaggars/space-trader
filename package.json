@@ -4,7 +4,7 @@
   "description": "Space Trader ============",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node src/index.js",
+    "start": "nodemon --exec babel-node app/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
