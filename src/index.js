@@ -3,6 +3,7 @@ import cors from 'cors';
 import express from 'express';
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
@@ -61,6 +62,6 @@ app.post('/merchants/:id', (req, res) => {
     return res.send(req.body);
 });
 
-app.listen(process.env.PORT, () => {
-    console.log(`Express app listening on port ${process.env.PORT}.`);
+app.listen(port, () => {
+    console.log(`Express app listening on port ${port}.`);
 });
