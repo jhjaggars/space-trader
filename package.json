@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec babel-node app/server.js",
-    "startdb": "podman run --name spacedb -p 5432:5432/tcp -e POSTGRES_PASSWORD=test -d docker.io/library/postgres:latest",
+    "migrate": "node_modules/.bin/knex migrate:latest",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
