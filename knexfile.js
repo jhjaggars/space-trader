@@ -1,3 +1,4 @@
+require('dotenv').config({path: '.env'});
 // Update with your config settings.
 
 const connection = {
